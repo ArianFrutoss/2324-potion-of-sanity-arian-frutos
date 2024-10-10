@@ -1,6 +1,6 @@
 import Effect from "./effect";
 
-export default class ingredient{
+export default class Ingredient{
 
     constructor (name, effects, value, weight){
 
@@ -12,7 +12,7 @@ export default class ingredient{
 
     static from ({name, effects, value, weight}){
 
-        return new ingredient(
+        return new Ingredient(
 
             name,
             effects.map(effect => Effect.from(effect)),
