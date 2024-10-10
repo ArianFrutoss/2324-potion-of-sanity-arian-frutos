@@ -1,3 +1,4 @@
+import Cauldron from "./cauldron.js";
 import Ingredients from "./ingredients.js";
 import { getData } from "./service.js"
 
@@ -7,6 +8,7 @@ const execute = async () => {
 
         const data = await getData();
         const ingredients = Ingredients.load(data);
+        const cauldron = new Cauldron(ingredients);
         
         showIngredients(ingredients);
     }
