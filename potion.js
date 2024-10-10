@@ -33,3 +33,19 @@ export default class Potion{
         return new PotionOfSanity();
     }
 }
+
+class PotionOfSanity extends Potion{
+
+    constructor (){
+
+        super('Potion of Sanity', 1000, 1, 50);
+    }
+}
+
+class FailedPotion extends Potion{
+
+    constructor (){
+
+        super('Failed Potion', 0, 0, 0);
+    }
+}

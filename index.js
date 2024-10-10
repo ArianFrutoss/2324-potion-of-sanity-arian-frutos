@@ -41,17 +41,16 @@ const showIngredients = (ingredients) => {
     ingredients.ingredients.map((ingredient) => {
 
         console.log(ingredient);
+        console.log(`-------------------------`);
+        console.log();
     })
-    
-    console.log(`-------------------------`);
-    console.log();
 }
 
 const showPotion = (potion) => {
 
     console.log(`${potion.name}`);
     console.log(`Value:     ${potion.value}`);
-    console.log(`Weight:    ${potion.weigth}`);
+    console.log(`Weight:    ${potion.weight}`);
     console.log(`Time:      ${potion.time}`);
     console.log(`-------------------------`);
     console.log();
