@@ -1,3 +1,5 @@
+import Potion from "./potion.js";
+
 export default class Cauldron{
 
     constructor (ingredients){
@@ -7,8 +9,8 @@ export default class Cauldron{
 
     createPotion(ingredient_name1, ingredient_name2){
 
-        const ingredient1 = this.ingredients.findCommonEffects(ingredient_name1);
-        const ingredient2 = this.ingredients.findCommonEffects(ingredient_name2);
+        const ingredient1 = this.ingredients.find(ingredient_name1);
+        const ingredient2 = this.ingredients.find(ingredient_name2);
 
         const common_effects = ingredient1.findCommonEffects(ingredient2);
 
