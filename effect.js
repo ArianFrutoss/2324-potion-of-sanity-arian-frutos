@@ -4,8 +4,8 @@ export default class Effect{
 
     constructor (name, type){
 
-        name = this.name;
-        type = this.type;
+        this.name = name;
+        this.type = type;
     }
 
     static from (name){

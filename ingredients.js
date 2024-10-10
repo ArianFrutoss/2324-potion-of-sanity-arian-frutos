@@ -1,10 +1,10 @@
-import Ingredient from "./ingredient";
+import Ingredient from "./ingredient.js";
 
 export default class Ingredients{
 
     constructor (ingredients){
 
-        ingredients = this.ingredients;
+        this.ingredients = ingredients;
     }
 
     static load(data){

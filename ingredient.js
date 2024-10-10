@@ -1,13 +1,13 @@
-import Effect from "./effect";
+import Effect from "./effect.js";
 
 export default class Ingredient{
 
     constructor (name, effects, value, weight){
 
-        name = this.name;
-        effects = this.effects;
-        value = this.value;
-        weight = this.weight;
+        this.name = name;
+        this.effects = effects;
+        this.value = value;
+        this.weight = weight;
     }
 
     static from ({name, effects, value, weight}){
