@@ -7,13 +7,22 @@ const execute = async () => {
 
         const data = await getData();
         const ingredients = Ingredients.load(data);
-        console.log(ingredients);
+        
+        showIngredients(ingredients);
     }
 
     catch (error){
 
         console.log(error.message);
     }
+}
+
+const showIngredients = (ingredients) => {
+    
+    ingredients.ingredients.map((ingredient) => {
+
+        console.log(ingredient);
+    })
 }
 
 execute();
